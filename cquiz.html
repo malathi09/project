@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Application</title>
+</head>
+<body>
+
+<h3>Q1.Which of these is not a relational or logical operator?</h3>
+<input type="radio" name="question1" id="correct1">=<br>
+<input type="radio" name="question1">||<br>
+<input type="radio" name="question1">== <br>
+<input type="radio" name="question1">!=<br>
+<p>_______________________________________________________________________________________________________________</p>
+<h3>Q2.What will be the output of the following C code?</h3>
+<p>#include<stdio.h>br
+    int main()
+    {
+        int p=1,q=2,r=3,s=4,x;
+        e=r+s=q*p;
+        printf("%d,%d\n",x,s);
+    }</p>
+<input type="radio" name="question2" >5,2 <br>
+<input type="radio" name="question2">7,2<br>
+<input type="radio" name="question2" id="correct2">syntax error<br>
+<input type="radio" name="question2">7,4<br>
+<p>______________________________________________________________________________________________________________</p>
+<h3>Q3.Out of the following which one is not valid as an if-else statement ?</h3>
+<input type="radio" name="question3" >if((char)x){}<br>
+<input type="radio" name="question3"id="correct3">if(if(x==1)){}<br>
+<input type="radio" name="question3">if(x){}<br>
+<input type="radio" name="question3">if(func1(x)){} <br>
+<p>_____________________________________________________________________________________________________________</p>
+<h3>Q4.we cannot use the keyword 'break' simply within______?</h3>
+<input type="radio" name="question4" id="correct4">if-else <br>
+<input type="radio" name="question4">while<br>
+<input type="radio" name="question4">for <br>
+<input type="radio" name="question4">do-while<br>
+<p>_____________________________________________________________________________________________________________</p>
+<h3>Q5.The global variables are______?</h3>
+<input type="radio" name="question5" id="correct5">External<br>
+<input type="radio" name="question5">internal<br>
+<input type="radio" name="question5">both external and internal<br>
+<input type="radio" name="question5">none of the above<br>
+<p>___________________________________________________________________________________________________________</p>
+<h3>Q6.Out of the following operations,which one is not possible in the case of a register variable</h3>
+<input type="radio" name="question6">Global declaration of the register variable<br>
+<input type="radio" name="question6">Copying of the value from the memory variale<br>
+<input type="radio" name="question6">Reading any value into the register variable<br>
+<input type="radio" name="question6"id="correct6">all of the above
+<p>__________________________________________________________________________________________________________</p>
+<h3>Q7.The #include<stdio.h> is a_______</h3>
+<input type="radio" name="question7" id="correct7">preprocessor directive<br>
+<input type="radio" name="question7">inclusion directive<br>
+<input type="radio" name="question7">file inclusion directive<br>
+<input type="radio" name="question7">none of th above
+<p>__________________________________________________________________________________________________________</p>
+<h3>Q8.The correct format of declaring a function is?</h3>
+<input type="radio" name="question8" id="correct8">type_of_return name_of_function(argument type);<br>
+<input type="radio" name="question8">type_of_return name_of_function(arguement type){}<br>
+<input type="radio" name="question8">type_of_return(arguement type)name_of_function; <br>
+<input type="radio" name="question8">all of the above
+<p>__________________________________________________________________________________________________________</p>
+<h3>Q9. Comment on the C statement given below:</h3>
+<p>int(*p)[5];</p>
+<input type="radio" name="question9" id="correct9">A pointer "p"to an array <br>
+<input type="radio" name="question9">A ragged array<br>
+<input type="radio" name="question9">An array"p" of pointers<br>
+<input type="radio" name="question9">none of these
+<p>__________________________________________________________________________________________________________</p>
+<h3>Q10.We can achieve the modulus for float by:</h3>
+<input type="radio" name="question10" id="correct10">fmod(x,y); <br>
+<input type="radio" name="question10">x%y<br>
+<input type="radio" name="question10">mod(x,y)<br>
+<input type="radio" name="question10">modulus(x,y);
+<p>__________________________________________________________________________________________________________</p>
+<input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+    if (document.getElementById('correct1').checked) {
+        score++;
+    }
+    if (document.getElementById('correct2').checked) {
+        score++;
+    }
+    if (document.getElementById('correct3').checked) {
+        score++;
+    }
+    if (document.getElementById('correct4').checked) {
+        score++;
+    }
+    if (document.getElementById('correct5').checked) {
+        score++;
+    }
+    if (document.getElementById('correct6').checked) {
+        score++;
+    }
+    if (document.getElementById('correct7').checked) {
+        score++;
+    }
+    if (document.getElementById('correct8').checked) {
+        score++;
+    }
+    if (document.getElementById('correct9').checked) 
+    {   score++;
+    }
+	if(document.getElementById('correct10').checked)
+		{	score++;
+		}
+
+        
+ alert("Your score is:"+score);
+ // to print on browser
+ // document.write("Your score is:"+score);
+}
+</script>
+
+</body>
+</html>

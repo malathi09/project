@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Application</title>
+</head>
+<body>
+
+<h3>Q1.If x is a set and the set contains an integer which is neither positive nor negative then the set x is ____________?</h3>
+<input type="radio" name="question1" id="correct1">Set is both Non- empty and Finite. <br>
+<input type="radio" name="question1">Set is Finite<br>
+<input type="radio" name="question1">Set is Empty<br>
+<input type="radio" name="question1">Set is Non-Empty
+<p>_____________________________________________________________________________________________________________________________</p>
+<h3>Q2.If x ∈ N and x is prime, then x is ________ set</h3>
+<input type="radio" name="question2" >Empty set<br>
+<input type="radio" name="question2">Finite set<br>
+<input type="radio" name="question2" id="correct2">Infinite set<br>
+<input type="radio" name="question2">Not a set
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q3.Convert the set x in roster form if set x contains the positive prime number, which divides 72.?</h3>
+<input type="radio" name="question3" >{1, 2, 3}<br>
+<input type="radio" name="question3">{1,}<br>
+<input type="radio" name="question3">{1, 2} <br>
+<input type="radio" name="question3"id="correct3">{2,3}
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q4.Power set of empty or Null set has exactly _________ subset</h3>
+<input type="radio" name="question4">Four<br>
+<input type="radio" name="question4">three <br>
+<input type="radio" name="question4">two<br>
+<input type="radio" name="question4" id="correct4">one
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q5.What is the Cartesian product of set A and set B, if the set A = {1, 2} and set B = {a, b}?</h3>
+<input type="radio" name="question5" id="correct5">{ (1, a), (2, a), (1, b), (2, b) }<br>
+<input type="radio" name="question5">{ (1, b), (2, 1), (1, a), (2, b) }<br>
+<input type="radio" name="question5">{ (1, 2), (2, 2), (1, a), (2, b) }<br>
+<input type="radio" name="question5">{ (1, 1), (2, a), (1, b), (2, a) }
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q6.The members of the set S = {x | x is the square of an integer and x < 100} is _______________</h3>
+<input type="radio" name="question6" id="correct6">{0, 1, 4, 9, 16, 25, 36, 49, 64, 81}<br>
+<input type="radio" name="question6">{0, 2, 3, 9, 16, 25, 36, 49, 64, 81}<br>
+<input type="radio" name="question6">{1, 4, 9, 16}<br>
+<input type="radio" name="question6">{0, 1, 4, 9, 25, 36, 49, 123}
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q7.The difference of {1, 2, 3, 6, 8} and {1, 2, 5, 6} is the set ____________?</h3>
+<input type="radio" name="question7" id="correct7">{3, 8}<br>
+<input type="radio" name="question7">{3, 4, 8}<br>
+<input type="radio" name="question7">{3, 5, 6, 9}<br>
+<input type="radio" name="question7">{1, 2, 3, 8}
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q8.If n(A) = 20 and n(B) = 30 and n(A U B) = 40 then n(A ∩ B) is?</h3>
+<input type="radio" name="question8" id="correct8">10<br>
+<input type="radio" name="question8">20<br>
+<input type="radio" name="question8">30<br>
+<input type="radio" name="question8">40
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q9. Which among the following can be taken as the discrete object?</h3>
+<input type="radio" name="question9" >people<br>
+<input type="radio" name="question9">rational numbers<br>
+<input type="radio" name="question9">integer<br>
+<input type="radio" name="question9" id="correct9">all of the above
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q10.Which option contains two equal sets?</h3>
+<input type="radio" name="question10" id="correct10">X = {5, 6, 8, 9} and Y = {6, 8, 5, 9}<br>
+<input type="radio" name="question10">X = {5, 8, 9} and Y = {6, 5, 9}<br>
+<input type="radio" name="question10">X = {6, 8, 9} and Y = {8, 5, 9}<br>
+<input type="radio" name="question10">X = {8, 9} and Y = {6, 8, 9}
+<p>_______________________________________________________________________________________________________________________________</p>
+<input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+    if (document.getElementById('correct1').checked) {
+        score++;
+    }
+    if (document.getElementById('correct2').checked) {
+        score++;
+    }
+    if (document.getElementById('correct3').checked) {
+        score++;
+    }
+    if (document.getElementById('correct4').checked) {
+        score++;
+    }
+    if (document.getElementById('correct5').checked) {
+        score++;
+    }
+    if (document.getElementById('correct6').checked) {
+        score++;
+    }
+    if (document.getElementById('correct7').checked) {
+        score++;
+    }
+    if (document.getElementById('correct8').checked) {
+        score++;
+    }
+    if (document.getElementById('correct9').checked) 
+    {   score++;
+    }
+	if(document.getElementById('correct10').checked)
+		{	score++;
+		}
+
+        
+ alert("Your score is:"+score);
+ // to print on browser
+ // document.write("Your score is:"+score);
+}
+</script>
+
+</body>
+</html>

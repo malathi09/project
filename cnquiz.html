@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Application</title>
+</head>
+<body>
+
+<h3>Q1.The term HTTP stands for?</h3>
+<input type="radio" name="question1" id="correct1">Hypertext transfer protocol<br>
+<input type="radio" name="question1">Hypertext transfer program<br>
+<input type="radio" name="question1">Hypertext tracing protocol <br>
+<input type="radio" name="question1">Hyper terminal transfer protocol
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q2.A proxy server is used as the computer?</h3>
+<input type="radio" name="question2" >performing file handling<br>
+<input type="radio" name="question2">acting as a backup<br>
+<input type="radio" name="question2" id="correct2">with external access<br>
+<input type="radio" name="question2">accessing user permissions
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q3.Which software prevents the external access to a system?</h3>
+<input type="radio" name="question3" >Gateway<br>
+<input type="radio" name="question3"id="correct3">Firewall<br>
+<input type="radio" name="question3">Router<br>
+<input type="radio" name="question3">Virus checker
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q4. Which one of the following is a valid email address?</h3>
+<input type="radio" name="question4" id="correct4">javat@point.com<br>
+<input type="radio" name="question4">gmail.com<br>
+<input type="radio" name="question4">tpoint@.com<br>
+<input type="radio" name="question4">all o these
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q5.Which one of the following is the most common internet protocol?</h3>
+<input type="radio" name="question5" id="correct5">TCP/IP<br>
+<input type="radio" name="question5">HTML<br>
+<input type="radio" name="question5">IPX/SPX<br>
+<input type="radio" name="question5">none of the above
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q6.Software programs that allow you to legally copy files and give them away at no cost are called which of the following?</h3>
+<input type="radio" name="question6" id="correct6">Public domain<br>
+<input type="radio" name="question6">Probe ware <br>
+<input type="radio" name="question6">Timeshare<br>
+<input type="radio" name="question6">none of the above
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q7.The term FTP stands for?</h3>
+<input type="radio" name="question7" id="correct7">File Transfer Protocol<br>
+<input type="radio" name="question7">File transfer program<br>
+<input type="radio" name="question7">File transfer protection<br>
+<input type="radio" name="question7">File transmission protocol
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q8.At what speed does tele-computed refer?</h3>
+<input type="radio" name="question8" id="correct8">Baud rate<br>
+<input type="radio" name="question8">Cycles per Second<br>
+<input type="radio" name="question8">Interface speed<br>
+<input type="radio" name="question8">all of the above
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q9.The maximum length (in bytes) of an IPv4 datagram is?</h3>
+<input type="radio" name="question9" id="correct9">65535<br>
+<input type="radio" name="question9">32<br>
+<input type="radio" name="question9">512<br>
+<input type="radio" name="question9">none of these
+<p>_______________________________________________________________________________________________________________________________</p>
+<h3>Q10.When the mail server sends mail to other mail servers it becomes ___ ?</h3>
+<input type="radio" name="question10" id="correct10">SMTP client<br>
+<input type="radio" name="question10">SMTP server<br>
+<input type="radio" name="question10">peer<br>
+<input type="radio" name="question10">none of the above
+<p>_______________________________________________________________________________________________________________________________</p>
+<input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+    if (document.getElementById('correct1').checked) {
+        score++;
+    }
+    if (document.getElementById('correct2').checked) {
+        score++;
+    }
+    if (document.getElementById('correct3').checked) {
+        score++;
+    }
+    if (document.getElementById('correct4').checked) {
+        score++;
+    }
+    if (document.getElementById('correct5').checked) {
+        score++;
+    }
+    if (document.getElementById('correct6').checked) {
+        score++;
+    }
+    if (document.getElementById('correct7').checked) {
+        score++;
+    }
+    if (document.getElementById('correct8').checked) {
+        score++;
+    }
+    if (document.getElementById('correct9').checked) 
+    {   score++;
+    }
+	if(document.getElementById('correct10').checked)
+		{	score++;
+		}
+
+        
+ alert("Your score is:"+score);
+ // to print on browser
+ // document.write("Your score is:"+score);
+}
+</script>
+
+</body>
+</html>

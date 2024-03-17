@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning hub for computer science</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #e7c70fd0;
+            color: #1f1c1c;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #d49c03;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            background-color: #2ce44b;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            background-color: #22c014;
+            color: #cab605;
+        }
+
+        .section-content {
+            background-color: #42c79b;
+            font-size: large;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(218, 221, 11, 0.712);
+            text-align: center;
+            text-decoration: double;
+        }
+
+        .download-button {
+            background-color: #2b5a04;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #22c014;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #2ce44b;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body background="1.jpg">
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="college logo.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>INTEGRATED SYLLABUS FOR COMPUTER SCIENCE</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about"></a></li>
+            <li><a href="#education"></a></li>
+            <li><a href="#cn"></a></li>
+            <li><a href="#cn1"></a></li>
+            <li><a href="#cn2"></a></li>
+            <li><a href="#resume"></a></li>
+            <li><a href="quiz"></a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <a href="CN-I Unit fully.pptx"><h3>UNIT 1</h3></a>
+            <a href="CN-unit 2-PhysicalLayer.pptx"><h3>UNIT 2</h3></a>
+            <a href="CN-Unit 3-Datalink Layer.ppt"><h3>UNIT 3</h3></a>
+            <a href="CN-unit 4 Network Layer.pptx"><h3>UNIT 4</h3></a>
+            <a href="CN-Unit 5-DNS & Email.ppt"><h3>UNIT 5</h3></a>
+            <a href="Prentice Hall - Computer Networks Tanenbaum 4ed.pdf"><h3>CN E-BOOK</h3></a>
+            <a href="cnquiz.html"><h3>CN QUIZ</h3></a>
+    </section>
+
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
